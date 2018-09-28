@@ -16,5 +16,11 @@
 				<li><a href="index.php">Home</a></li>
 			</ul>
 			<div class="nav-login">
+				<form action="includes/loginc.php" method="POST">
+					<input type="text" name="username" placeholder="Username">
+					<input type="password" name="pwd" placeholder="Password">
+					<button type="submit" name="submit">Login</button>
+				</form>
+				<a href="signup.php">Sign up</a>'
 </body>
 </html>
