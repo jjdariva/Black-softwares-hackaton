@@ -21,6 +21,6 @@
 					<input type="password" name="pwd" placeholder="Password">
 					<button type="submit" name="submit">Login</button>
 				</form>
-				<a href="signup.php">Sign up</a>'
+				<a href="signup.php">Sign up</a>
 </body>
 </html>
