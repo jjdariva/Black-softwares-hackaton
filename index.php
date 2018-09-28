@@ -5,13 +5,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Abatechix</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <header>
-	<nav>
-		<div class="main-wrapper">
+	<div class="principal">
+		<nav>
 			<ul>
 				<li><a href="index.php">Home</a></li>
 			</ul>
@@ -20,7 +20,7 @@
 					<input type="text" name="username" placeholder="Username">
 					<input type="password" name="pwd" placeholder="Password">
 					<button type="submit" name="submit">Login</button>
+					<a href="signup.php">Sign up</a>
 				</form>
-				<a href="signup.php">Sign up</a>
-</body>
+</body>				
 </html>
