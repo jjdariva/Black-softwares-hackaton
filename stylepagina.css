@@ -1,6 +1,54 @@
+<<<<<<< HEAD
+body {
+  font-family: Arial;
+}
+table{
+  table-layout: auto;
+  border: 2px solid black;
+  margin: auto;
+  width: 700px; 
+  height: 500px;
+  padding: 10px;   
+}
+tr,td {
+  border: 1px solid black;
+  font-size: 50px;
+}
+tr {
+  border:1px solid black;
+}
+.input{
+  height: 40px;
+  font: Calibri;
+  font-size: 20px;
+		}
+div{
+  text-align: center;
+=======
+/* Default CSS*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
 
 body {
-<<<<<<< HEAD
     line-height:1;
 }
 
@@ -72,55 +120,5 @@ hr {
 
 input, select {
     vertical-align:middle;
-}
-
-/* css original*/
-.principal{
-    width: 1000px
-    margin: auto 0;
-}
-a{
-    text-decoration: none;
-}
-
-body{
-    background-color: #ccc;
-}
-
-header nav {
-    width: 100%;
-    height: 80px;
-    background-color: #fff;
-}
-header nav ul{
-    float: left;
-}
-header nav ul li{
-    float: left;
-    list-style:none;
-}
-header nav ul li a{
-    padding-left: 70px;
-    font-family: Arial;
-    font-size: 16px;
-    color: #111;
-    line-height: 63px;
-    padding-top: 20px
-
-}
-header nav form {
-    padding-right: 70px;
-    float: right;
-    padding-top: 30px;
-}
-header nav form input{
-    padding-left: 10px;
-    font-family: Arial;
-    font-size: 16px;
-    color: #111;
-    border: solid;
-    border-color: #ccc;
-    background-color: #fff;
-    line-height:20px;
-
+>>>>>>> c2c6ff0c8a9bd059162acc43bd42ec4f890b0d0d
 }
