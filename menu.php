@@ -10,17 +10,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ABATE CHIQ</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
-<<<<<<< HEAD
-
-	<link rel="stylesheet" type="text/css" href="style.css">
-    <title>Ex Poul</title>
-	<style>
-=======
+    <title>ExPoul</title>
     <style>
->>>>>>> 37411be00f18be2cd4ea0e46cab078521ad93513
 		.fundo{
 			background-color: #CCC;
 		}
@@ -33,16 +26,9 @@
 			font-family: arial;
 			font-size: 45px;
 		}
-<<<<<<< HEAD
         	{
         	    margin: 0;
         	}
-
-=======
-	   {
-	       margin: 0;
-	   }
->>>>>>> 37411be00f18be2cd4ea0e46cab078521ad93513
         ul {
             list-style-type: none;
             margin: 0;
@@ -53,19 +39,6 @@
             overflow: auto;
             float: left;
         }
-<<<<<<< HEAD
-
-        li a {
-            display: block;
-            color: #000;
-            padding: 8px 16px;
-            text-decoration: none;
-            float: left;
-        }
-
-        li a.active {
-            background-color: #4CAF50;
-=======
         li a {
             display: block;
             color: #000;
@@ -83,15 +56,6 @@
 
         li a:hover:not(.active) {
             background-color: #555;
->>>>>>> 37411be00f18be2cd4ea0e46cab078521ad93513
-            color: white;
-            transition-duration: 0.2s;
-            float: left;
-        }
-<<<<<<< HEAD
-
-        li a:hover:not(.active) {
-            background-color: #555;
             color: white;
             transition-duration: 0.2s;
             float: left;
@@ -104,18 +68,6 @@
             width: 90px;
             font-size: 25px;
         }
-
-=======
-        .button{
-            background-color: white;
-            color: black;
-            border: 2px solid #555555;
-            height: 50px;
-            width: 90px;
-            font-size: 25px;
-        }
-
->>>>>>> 37411be00f18be2cd4ea0e46cab078521ad93513
         .button:hover {
             background-color: #555555;
             color: white;
@@ -124,7 +76,6 @@
             font-size: 25px;
             transition-duration: 0.3s;
         }
-<<<<<<< HEAD
         .sidenav {
             height: 100%;
             width: 0;
@@ -160,9 +111,6 @@
             font-family: arial;
         }
 </style>
-=======
-    </style>
->>>>>>> 37411be00f18be2cd4ea0e46cab078521ad93513
 </head>
 <body class="fundo">
 	<header>
@@ -185,11 +133,6 @@
             </nav>
         </div>
     </header>		
-		<div class="principal">
-		</div>
-	</header>	
-<<<<<<< HEAD
-
 <script>
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
@@ -199,7 +142,5 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 </script>
-=======
->>>>>>> 37411be00f18be2cd4ea0e46cab078521ad93513
 </body>
 </html>
