@@ -1,10 +1,10 @@
 <?php  
 	session_start();
 	if(isset($_SESSION['u_id'])) {
-		header("Location /hackaton/menu.php");
+		header("Location /hackaton/menu.php?jalogado");
 		exit();
 	} else {
-		$x = "1"; 
+		$x = "1";
 	}
 ?>
 

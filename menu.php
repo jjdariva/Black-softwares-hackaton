@@ -35,7 +35,7 @@
 				</ul>
 			</div>
 			<div class="nav-login">
-				<form = action="includes/logoutc.php" method="POST">
+				<form = action="includes/logout.inside.php" method="POST">
 					<button type="submit" name="submit">Logout</button>
 				</form>
 			</div>

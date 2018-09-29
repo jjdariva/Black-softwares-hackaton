@@ -47,3 +47,4 @@ if (isset($_POST['submit'])) {
 else{
 	header("Location: /hackaton/index.php?Senha error");
 	exit();
+}
