@@ -1,26 +1,32 @@
 <?php  
-	session_start()
+	session_start();
+	if(isset($_SESSION['u_id'])) {
+		header("Location /hackaton/menu.php");
+		exit();
+	} else {
+		$x = "1"; 
+	}
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<meta charset="utf-8">
+	<title>Abatechix</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <header>
-	<nav>
-		<div class="main-wrapper">
+	<div class="principal">
+		<nav>
 			<ul>
-				<li><a href="index.php">Home</a></li>
+				<li><a href="/hackaton/index.php">Home</a></li>
 			</ul>
 			<div class="nav-login">
-				<form action="includes/loginc.php" method="POST">
-					<input type="text" name="username" placeholder="Username">
-					<input type="password" name="pwd" placeholder="Password">
+				<form action="includes/login.inside.php" method="POST">
+					<input type="text" name="username" placeholder="Usuário">
+					<input type="password" name="pwd" placeholder="Senha">
 					<button type="submit" name="submit">Login</button>
 				</form>
-				<a href="signup.php">Sign up</a>'
-</body>
+</body>				
 </html>
