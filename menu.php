@@ -29,18 +29,17 @@
 <body class="fundo">
 	<div class="principal">
 		<nav>
-			<ul>
-				<li><a href="# Futuros links #">ajbcdabcv adgjvdcv</a></li>
-			</ul>
+			<div class="divisao">
+				<ul>
+					<li><a href="mortalidadepagina.php">Ficha de mortalidade</a></li>
+				</ul>
+			</div>
 			<div class="nav-login">
-				<form = action="includes/logoutc.php" method="POST">
+				<form = action="includes/logout.inside.php" method="POST">
 					<button type="submit" name="submit">Logout</button>
 				</form>
 			</div>
 		</nav>
 	</div>		
-	<div class="divisao">
-		<p></p>
-	</div>
 </body>
 </html>
