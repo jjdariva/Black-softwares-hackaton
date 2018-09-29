@@ -14,14 +14,15 @@
 			<th>Quantidade</th>
 		</tr>
 		<tr>
-		<form>
+		<form action="racao1.php" method="post">
 			<th><input type="date" name="dataracao" class="info"></th>
 			<th><input type="text" name="faseracao" class="info"></th>
 			<th><input type="number" name="quantracao" class="info"></th>
-		</form>
 		</tr>
 	</table>
 	<br><br>
-	<input type="submit" name="enviarracao" value='Salvar' id="botao">
+	<input type="submit">
+	</form>
+	<br><br>
 </body>
 </html>
