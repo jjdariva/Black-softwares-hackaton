@@ -5,6 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>Abatechix</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
