@@ -18,9 +18,9 @@
 		<tr>
 			<td><input type="number" name="totalFrangos"></td>
 			<td>IDEAL:<input type="number" name="idealMachos" value="186" readonly><br>
-				REAL: <input type="number" name="realMachos"></td>
+				</td>
 			<td>IDEAL:<input type="number" name="idealFemeas" value="175" readonly><br>
-				REAL: <input type="number" name="realFemeas"></td>
+				</td>
 			<td>IDEAL:<input type="number" name="idealMisto" value="177" readonly><br>
 				REAL: <input type="number" name="realMisto"></td>
 		</tr>

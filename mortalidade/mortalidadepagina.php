@@ -5,9 +5,24 @@
 	<title></title>
 		<link rel="stylesheet" type="text/css" href="cssmor.css">
 		<script>
-		function redirecionar() {
-			lol = document.getElementById('MN0').value
-			alert(lol)
+		function tabelaCompleta(){
+			for(var i = 0; i<7; i++){
+				if (document.getElementById('MN'+ i).value == null) {
+					return false
+					break
+				} else if (document.getElementById('MA'+ i).value == null) {
+					return false
+					break
+				} else {
+					return true
+				}
+			}
+		}
+
+		function testarLink() {
+			if(tabelaCompleta() == false){
+				document.getElementById('sair').href = '#'
+			} 
 		}
 
 		function funcaoSemana() {
@@ -38,39 +53,42 @@
 </head>
 <body onload="funcaoSemana()">
 	<div>
-		<center><h2>Mortalidade</h2></center>
-		<form>
+	<center><h2>Mortalidade</h2></center>
+	<form>
 		<table class="a">
-			  <tr class="coluna">
-			    <th>Mortalidade Diária</th>
-			    <th>1°<br><p id="DIA0"></p></th>
-			    <th>2°<br><p id="DIA1"></p></th>
-			    <th>3°<br><p id="DIA2"></p></th>
-			    <th>4°<br><p id="DIA3"></p></th>
+			<tr class="coluna">
+				<th>Mortalidade Diária</th>
+		    	<th>1°<br><p id="DIA0"></p></th>
+		    	<th>2°<br><p id="DIA1"></p></th>
+		   	 	<th>3°<br><p id="DIA2"></p></th>
+		    	<th>4°<br><p id="DIA3"></p></th>
 			    <th>5°<br><p id="DIA4"></p></th>
 			    <th>6°<br><p id="DIA5"></p></th>
-			    <th>7°<br><p id="DIA6"></p></th>
-			  </tr>
-			  <tr>
-			    <td>Morte Natural</td>
+		    	<th>7°<br><p id="DIA6"></p></th>
+			</tr>
+			<tr>
+				<td>Morte Natural</td>
+			    
 			    <script>
 			    	for (var i = 0; i<7; i++) {	   
-document.write('<td><input class="input" type="number" id="MN'+i+'" name="MN'+i+'" placeholder="Exemplo:0"></td>')
+						document.write('<td><input class="input" type="number" id="MN'+i+'" name="MN'+i+'" placeholder="Exemplo:0"></td>')
 			    	}
 			    </script>
+			  
 			  </tr>
 			  <tr>
 			    <td>Eliminado</td>
+			    
 			    <script>
-			    for (var i = 0; i<7; i++) {	   
-document.write('<td><input class="input" type="number" id="ME'+i+'" name="ME'+i+'" placeholder="Exemplo:0"></td>')
+			    	for (var i = 0; i<7; i++) {	   
+						document.write('<td><input class="input" type="number" id="ME'+i+'" name="ME'+i+'" placeholder="Exemplo:0"></td>')
 			    	}
 			    </script>
+			  
 			  </tr>
 		</table>
 	</form><br><br>
-	<input type="submit" name="salvar e sair" id="botao">
+	<a href="http://localhost/hue/hackaton/menu.php" id="sair"><input type="submit" name="salvar e sair" id="botao" onclick="testarLink()"> </a>
 	</div>
-	
 </body>
 </html>
