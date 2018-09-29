@@ -1,5 +1,11 @@
 <?php  
 	session_start()
+	if (isset($_SESSION['u_id'])) {
+		header("Location /hackaton/menu.php")
+	} else {
+		# code...
+	}
+	
 ?>
 
 <!DOCTYPE html>
@@ -14,7 +20,7 @@
 	<div class="principal">
 		<nav>
 			<ul>
-				<li><a href="/index.php">Home</a></li>
+				<li><a href="/hackaton/index.php">Home</a></li>
 			</ul>
 			<div class="nav-login">
 				<form action="includes/login.inside.php" method="POST">
