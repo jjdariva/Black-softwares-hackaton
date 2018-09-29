@@ -37,7 +37,7 @@ if (isset($_POST['submit'])) {
 					$_SESSION['u_id'] = $row['u_id'];
 					$_SESSION['u_name'] = $row['u_name'];
 					$_SESSION['u_pwd'] = $row['u_pwd'];
-					header('Location: /hackaton/index.php?sucesso');
+					header('Location: /hackaton/menu.php?sucesso');
 					exit();
 				}
 			}
