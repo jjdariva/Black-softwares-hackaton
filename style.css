@@ -139,8 +139,13 @@ header nav form button{
     margin-right: 10px;
     font-family: Arial;
     font-size: 14px; 
-    background-color: #f3f3f3;
-    color:#111; 
+    background-color:#c6c6c6;
+    color:#555; 
     cursor: pointer;
-    border: none;
+    border: none;   
+}
+header nav form button:hover{
+    background-color: #555555;
+    transition-duration: 0.2s;
+    color: white;
 }
