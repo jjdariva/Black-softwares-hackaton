@@ -21,7 +21,7 @@
 		$ME4 = $_POST['ME3'];
 			$soma3 = $MN4+$ME4;
 		$MN5 = $_POST['MN4'];
-		$ME5 = $_POST['ME4'];
+		$ME5 = $_POST['ME4']; 
 			$soma4 = $MN5+$ME5;
 		$MN6 = $_POST['MN5'];
 		$ME6 = $_POST['ME5'];
@@ -31,19 +31,19 @@
 			$soma6 = $MN7+$ME7;
 
 		$sql = mysqli_real_escape_string($conn ,"UPDATE usuarios SET morto1 = $soma WHERE morto1 = -1 AND u_id = $uid;");
-		mysql_query($conn, $sql);
+		mysqli_query($conn, $sql);
 		$sql = mysqli_real_escape_string($conn ,'UPDATE usuarios SET morto2 = $soma1 WHERE morto2 = -1 AND u_id = $uid;');
-		mysql_query($conn, $sql);
+		mysqli_query($conn, $sql);
 		$sql = mysqli_real_escape_string($conn ,'UPDATE usuarios SET morto3 = $soma2 WHERE morto3 = -1 AND u_id = $uid;');
-		mysql_query($conn, $sql);
+		mysqli_query($conn, $sql);
 		$sql = mysqli_real_escape_string($conn ,'UPDATE usuarios SET morto4 = $soma3 WHERE morto4 = -1 AND u_id = $uid;');
-		mysql_query($conn, $sql);
+		mysqli_query($conn, $sql);
 		$sql = mysqli_real_escape_string($conn ,'UPDATE usuarios SET morto5 = $soma4 WHERE morto5 = -1 AND u_id = $uid;');
-		mysql_query($conn, $sql);
+		mysqli_query($conn, $sql);
 		$sql = mysqli_real_escape_string($conn ,'UPDATE usuarios SET morto6 = $soma5 WHERE morto6 = -1 AND u_id = $uid;');
-		mysql_query($conn, $sql);
+		mysqli_query($conn, $sql);
 		$sql = mysqli_real_escape_string($conn ,'UPDATE usuarios SET morto7 = $soma6 WHERE morto7 = -1 AND u_id = $uid;');
-		mysql_query($conn, $sql);
+		mysqli_query($conn, $sql);
 
 		$sql = mysqli_real_escape_string($conn ,'SELECT morto1, morto2, morto3, morto4, morto5, morto6, morto7 FROM `usuarios` WHERE morto1 != -1 AND morto2 != -1 AND morto3 != -1 AND morto4 != -1 AND morto5 != -1 AND morto6 != -1 AND morto7 != -1;');
 		$rowp = mysqli_query($conn, $sql);

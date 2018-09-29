@@ -8,19 +8,20 @@
 		$conn = mysqli_connect($servername, $username, $password, $dbname);
 		$uid = $_SESSION['u_id'];
 
-		$EspN = $_POST['EspN'];
-		$TrueW = $_POST['TrueW'];
-		$pesomedia = $TrueW * $EspN;
+		$np = $_POST['np'];
+		$pesototal = $_POST['pesototal'];
+		$pesomedia = $pesototal * $np;
 		
-		$sql = mysqli_real_escape_string($conn ,UPDATE usuarios SET pesorigem = TrueW, pesomedia WHERE u_id = $uid;);
-		mysql_query($conn, $sql);
-		echo "$sql";
-
+		$sql = mysqli_real_escape_string($conn ,"UPDATE usuarios SET pesorigem = $np WHERE u_id = $uid;");
+		mysqli_query($conn, $sql);
+		$sql = mysqli_real_escape_string($conn ,"UPDATE usuarios SET pesomedia = $pesomedia WHERE u_id = $uid;");
+		mysqli_query($conn, $sql);
+		$sql = mysqli_real_escape_string($conn ,"UPDATE usuarios SET pesototal = $pesototal WHERE u_id = $uid;");
+		mysqli_query($conn, $sql);
+		header("Location: /hackaton/menu.php?Sucesso");
+		exit();
 	}
-
 	else{
 		header("Location: /hackaton/menu.php");
-		exit();
-				header("Location: /hackaton/menu.php?Sucesso");
 		exit();
 	}

@@ -16,12 +16,12 @@
 				<th>PESO Misto(g)</th>
 			</tr>
 			<tr>
-			<td><input type="number" name="EspN"></td>
-			<td>IDEAL:<input type="number" name="MascW" value="186" readonly><br></td>
-			<td>IDEAL:<input type="number" name="FemW" value="175" readonly><br></td>
+			<td><input type="number" name="np"></td>
+			<td>IDEAL:<input type="number" value="186" readonly><br></td>
+			<td>IDEAL:<input type="number" value="175" readonly><br></td>
 			<td>
-				IDEAL:<input type="number" name="GenW" value="177" readonly><br>
-				REAL: <input type="number" name="TrueW"></td>
+				IDEAL:<input type="number" value="177" readonly><br>
+				REAL: <input type="number" name="pesototal"></td>
 			</tr>
 		</table>
 		<br>

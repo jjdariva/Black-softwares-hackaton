@@ -14,14 +14,14 @@
 			<th>Quantidade</th>
 		</tr>
 		<tr>
-		<form>
-			<th><input type="date" name="dataracao" class="info"></th>
-			<th><input type="text" name="faseracao" class="info"></th>
-			<th><input type="number" name="quantracao" class="info"></th>
+		<form action="\hackaton\racao\includes\racao.inside.php" method="POST">
+			<th><input type="date" name="rdata" class="info"></th>
+			<th><input type="text" name="rfase" class="info"></th>
+			<th><input type="number" name="rquant" class="info"></th>
+	</table>
+			<br><br>
+			<input type="submit" name="submit" value='Salvar' id="botao">
 		</form>
 		</tr>
-	</table>
-	<br><br>
-	<input type="submit" name="enviarracao" value='Salvar' id="botao">
 </body>
 </html>
