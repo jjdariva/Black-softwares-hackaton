@@ -35,7 +35,6 @@
 		</nav>
 	</div>
 </header>
-		<img src="pintostop.jpg" id="pinto" width="1900" height="860">
 		<div id="rodape">
 			<span>Black Softwares®: Todos os direitos reservados</span>
 		</div>
