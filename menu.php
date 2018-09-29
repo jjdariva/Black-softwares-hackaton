@@ -10,10 +10,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<<<<<<< HEAD
+
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
-=======
+
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<style>
 		.fundo{
@@ -29,7 +29,7 @@
 			font-size: 45px;
 		}
 	</style>
->>>>>>> cdc9b11faa936451ed9d183a19ff41382aba76fa
+
 	<title>ABATE CHIQ</title>
 	<style>
 	{
@@ -96,11 +96,13 @@ li a:hover:not(.active) {
                     <form action="includes/logout.inside.php" method="POST">
                         <button type="submit" name="submit" class="button">Sair</button>
                     </form>
+                    <img src="logo4.png" height="78.571" width="238.095">
+                    <input type="button"> Menu 
                 </div>
                 <br><br><br><br><br>
                 <div>
                     <ul>
-					  <li><a href="menu.php">Menu</a></li><br><br><br><br><br>
+					  </li><br><br><br><br><br>
 					  <li><a href="mortalidadepagina.php">Ficha de mortalidade</a></li>
 					  <li><a href="peso.php">Ficha de Peso</a></li>
 					  <li><a href="racao.php">Ficha de ração</a></li>
@@ -111,18 +113,6 @@ li a:hover:not(.active) {
     </header>		
 
 		<div class="principal">
-			<nav>
-				<div>
-					<ul>
-						<li><a href="mortalidadepagina.php">Ficha de mortalidade</a></li>
-					</ul>
-				</div>
-				<div class="nav-login">
-					<form action="includes/logout.inside.php" method="POST">
-						<button type="submit" name="submit">Logout</button>
-					</form>
-				</div>
-			</nav>
 		</div>
 	</header>	
 
