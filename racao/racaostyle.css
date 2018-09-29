@@ -1,7 +1,9 @@
 body{
 	text-align: center;
 	font-family: Arial;
-
+	background-image: linear-gradient(to left,#e0e2e5, #c9d4e5);
+	background-attachment: fixed;
+	background-size: 100%;
 }
 table {
 	border:2px solid black;
@@ -26,7 +28,9 @@ th,td {
 	padding: 5px;
 	background-color: white;
 	border-radius: 5px;
-	border: 1px solid #41ccc5 ;
+	border: 1px solid #41ccc5;
+	transition-property: background-color;
+	transition-duration: 0.2s;
 }
 #botao:hover{
 	transition-property: background-color;

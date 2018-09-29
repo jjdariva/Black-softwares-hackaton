@@ -38,6 +38,7 @@
 </head>
 <body onload="funcaoSemana()">
 	<div>
+		<p>tabela</p>
 		<center><h2>Mortalidade</h2></center>
 		<form action="/hackaton/mortalidade/includes/mort.php" method="POST">
 		<table class="a">
