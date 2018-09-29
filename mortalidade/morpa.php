@@ -67,9 +67,16 @@ document.write('<td><input class="input" type="number" id="ME'+i+'" name="ME'+i+
 			    	}
 			    </script>
 			  </tr>
+<<<<<<< HEAD
 		</table><br><br>
 		<input type="submit" name="salvar e sair" id="botao">
 	</form>
+=======
+		</table>
+		<input type="submit" name="salvar e sair">
+	</form><br><br>
+	<input type="submit" name="salvar e sair" id="botao">
+>>>>>>> 8aa81606661ec2cb29810f64844fcf5dc77017dd
 	</div>
 	
 </body>

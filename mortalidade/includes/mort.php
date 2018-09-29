@@ -10,4 +10,5 @@
 	$sql ="SELECT * FROM `usuarios` WHERE m1 = null;";
 	$query = mysqli_query($conn, $sql);
 	$row = mysqli_fetch_assoc($query);
+	
 		echo "$row";
