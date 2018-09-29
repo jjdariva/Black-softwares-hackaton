@@ -29,5 +29,10 @@
 					<input type="password" name="pwd" placeholder="Senha">
 					<button type="submit" name="submit">Login</button>
 				</form>
+			</div>
+		</nav>
+	</div>
+</header>
+
 </body>				
 </html>

@@ -10,12 +10,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+    <title>ABATE CHIQ</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
-
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<style>
+    <style>
 		.fundo{
 			background-color: #CCC;
 		}
@@ -28,68 +26,61 @@
 			font-family: arial;
 			font-size: 45px;
 		}
-	</style>
+	   {
+	       margin: 0;
+	   }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 25%;
+            background-color: #f1f1f1;
+            position: fixed;
+            overflow: auto;
+            float: left;
+        }
+        li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+            float: left;
+        }
 
-	<title>ABATE CHIQ</title>
-	<style>
-	{
-	    margin: 0;
-	}
+        li a.active {
+            background-color: #4CAF50;
+            color: white;
+            transition-duration: 0.2s;
+            float: left;
+        }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 25%;
-    background-color: #f1f1f1;
-    position: fixed;
-    overflow: auto;
-    float: left;
-}
+        li a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+            transition-duration: 0.2s;
+            float: left;
+        }
+        .button{
+            background-color: white;
+            color: black;
+            border: 2px solid #555555;
+            height: 50px;
+            width: 90px;
+            font-size: 25px;
+        }
 
-li a {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
-    float: left;
-}
-
-li a.active {
-    background-color: #4CAF50;
-    color: white;
-    transition-duration: 0.2s;
-    float: left;
-}
-
-li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-    transition-duration: 0.2s;
-    float: left;
-}
-.button{
-    background-color: white;
-    color: black;
-    border: 2px solid #555555;
-    height: 50px;
-    width: 90px;
-    font-size: 25px;
-}
-
-.button:hover {
-    background-color: #555555;
-    color: white;
-    height: 50px;
-    width: 90px;
-    font-size: 25px;
-    transition-duration: 0.3s;
-}
-</style>
+        .button:hover {
+            background-color: #555555;
+            color: white;
+            height: 50px;
+            width: 90px;
+            font-size: 25px;
+            transition-duration: 0.3s;
+        }
+    </style>
 </head>
 <body class="fundo">
 	<header>
-
         <div class="principal">
             <nav>
             	<div class="nav-login">
@@ -111,10 +102,8 @@ li a:hover:not(.active) {
             </nav>
         </div>
     </header>		
-
 		<div class="principal">
 		</div>
 	</header>	
-
 </body>
 </html>
