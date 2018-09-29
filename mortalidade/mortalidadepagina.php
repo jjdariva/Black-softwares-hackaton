@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
 	<meta charset="utf-8">
 	<title></title>
 		<link rel="stylesheet" type="text/css" href="essecsspertencemortalidade.css">
 		<script>
+		function redirecionar() {
+			if (getElementsByTagName('input').value != null) {
+				sub
+			}
+		}
+
 		function funcaoSemana() {
 			data = new Date()
 			mes = data.getMonth()
@@ -14,7 +20,7 @@
 			document.getElementById('DIA0').innerHTML = dia + '/' + (mes + 1)
 			
 			for(i = 1; i<=6;i++){
-			if (dia + i == 32) {
+			if (dia + i == 31) {
 				dia = 1
 				document.getElementById('DIA'+i).innerHTML = 1 + '/' + (mes + 2)
 				document.getElementById('DIA'+(i+1)).innerHTML = 2 + '/' + (mes + 2)
@@ -35,6 +41,7 @@
 <body onload="funcaoSemana()">
 	<div>
 		<center><h2>Mortalidade</h2></center>
+		<form>
 		<table class="a">
 			  <tr class="coluna">
 			    <th>Mortalidade Diária</th>
@@ -63,6 +70,8 @@ document.write('<td><input class="input" type="number" id="ME'+i+'" name="ME'+i+
 			    </script>
 			  </tr>
 		</table>
+	</form>
+		<input type="submit" name="salvar e sair">
 	</div>
 </body>
 </html>

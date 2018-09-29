@@ -10,8 +10,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+<<<<<<< HEAD
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
+=======
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		.fundo{
+			background-color: #CCC;
+		}
+		.divisao{
+			background-color: #C0C0C0;
+			height: 900px;
+			width: 400px;
+		}
+		.font{
+			font-family: arial;
+			font-size: 45px;
+		}
+	</style>
+>>>>>>> cdc9b11faa936451ed9d183a19ff41382aba76fa
 	<title>ABATE CHIQ</title>
 	<style>
 	{
@@ -71,6 +89,7 @@ li a:hover:not(.active) {
 </head>
 <body class="fundo">
 	<header>
+
         <div class="principal">
             <nav>
             	<div class="nav-login">
@@ -90,5 +109,22 @@ li a:hover:not(.active) {
             </nav>
         </div>
     </header>		
+
+		<div class="principal">
+			<nav>
+				<div>
+					<ul>
+						<li><a href="mortalidadepagina.php">Ficha de mortalidade</a></li>
+					</ul>
+				</div>
+				<div class="nav-login">
+					<form action="includes/logout.inside.php" method="POST">
+						<button type="submit" name="submit">Logout</button>
+					</form>
+				</div>
+			</nav>
+		</div>
+	</header>	
+
 </body>
 </html>
