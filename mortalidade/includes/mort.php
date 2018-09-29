@@ -1,14 +1,22 @@
 <?php
-	session_start();
-	include 'dtb.inside.php';
 	if ($_POST) {
 		$MN1 = $_POST['MN0'];
 		$ME1 = $_POST['ME0'];
 	}
-	$uname = $_SESSION['u_name'];
-	echo "~$uname";
 	$soma = $MN1+$ME1;
-	$sql ="INSERT INTO `usuarios` (`m1`,`m2`) VALUES (`$uname`, MN1) WHERE `u_name` = $uname;";
-	$cv = mysqli_query($conn, $sql);
-	echo "$sql";
-	echo ($_SESSION['u_name']);				
+	$servername = "localhost";
+	$username = "root";
+	$password = "usbw";
+	$dbname = "cadastro";
+	$conn = new mysqli($servername, $username, $password, $dbname);
+	if ($conn->connect_error) {
+		die("Connection failed: " . $conn->connect_error);
+	} 
+	$sql = "UPDATE usuarios SET m1 = $soma WHERE m1=null";
+	if ($conn->query($sql) === TRUE) {
+		echo "New record created successfully";
+	} else {
+		echo "Error: " . $sql . "<br>" . $conn->error;
+	}
+	$conn->close();
+?>
