@@ -20,7 +20,6 @@
 					<input type="text" name="username" placeholder="Username">
 					<input type="password" name="pwd" placeholder="Password">
 					<button type="submit" name="submit">Login</button>
-					<a href="signup.php">Sign up</a>
 				</form>
 </body>				
 </html>
