@@ -69,9 +69,8 @@ document.write('<td><input class="input" type="number" id="ME'+i+'" name="ME'+i+
 			    </script>
 			  </tr>
 		</table><br><br>
-		<input type="submit" name="salvar e sair" id="botao">
+		<input type="submit" name="submit" id="botao">
 	</form>
 	</div>
-	
 </body>
 </html>

@@ -51,12 +51,10 @@
 		$semanal = $row['morto1'] + $row['morto2'] + $row['morto3'] + $row['morto4'] + $row['morto5'] + $row['morto6'] + $row['morto7'];
 		$sql = mysqli_real_escape_string($conn ,'UPDATE usuarios SET mortsemanal = $semanal  WHERE morto7= -1;');
 		mysql_query($conn, $sql);
-		if (true) {
-			header('Location: /hackaton/menu.php?Sucesso');
-			exit();
-		}
+		header("Location: /hackaton/menu.php?Sucesso");
+		exit();
 	}
 	else{
-		header('Location /hackaton/menu.php?Nope');
+		header("Location: /hackaton/index.php");
 		exit();
 	}
