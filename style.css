@@ -122,13 +122,15 @@ header nav form {
     height: 34px;
 }
 header nav form input{
-    padding-left: 10px;
-    font-family: Arial;
-    font-size: 16px;
-    color: #111;
-    background-color: #fff;
+    float: left;
+    width: 140px;
     height: 30px;
-    line-height:30px;
+    padding: 0px 10px;
+    margin-right: 10px;
+    font-family: arial;
+    font-size: 14px;
+    color: #111;
+    line-height: 30px;
 }
 header nav form button{
     float:left;

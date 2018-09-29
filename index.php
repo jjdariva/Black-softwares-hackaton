@@ -13,12 +13,12 @@
 	<div class="principal">
 		<nav>
 			<ul>
-				<li><a href="index.php">Home</a></li>
+				<li><a href="/index.php">Home</a></li>
 			</ul>
 			<div class="nav-login">
-				<form action="includes/loginc.php" method="POST">
-					<input type="text" name="username" placeholder="Username">
-					<input type="password" name="pwd" placeholder="Password">
+				<form action="includes/login.inside.php" method="POST">
+					<input type="text" name="username" placeholder="Usuário">
+					<input type="password" name="pwd" placeholder="Senha">
 					<button type="submit" name="submit">Login</button>
 				</form>
 </body>				
