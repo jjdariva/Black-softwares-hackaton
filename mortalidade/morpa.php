@@ -68,13 +68,9 @@ document.write('<td><input class="input" type="number" id="ME'+i+'" name="ME'+i+
 			    </script>
 			  </tr>
 		</table>
-<<<<<<< HEAD:mortalidade/morpa.php
 		<input type="submit" name="salvar e sair">
-	</form>
-=======
 	</form><br><br>
 	<input type="submit" name="salvar e sair" id="botao" onclick="redirecionar()">
->>>>>>> 37411be00f18be2cd4ea0e46cab078521ad93513:mortalidade/mortalidadepagina.php
 	</div>
 	
 </body>
