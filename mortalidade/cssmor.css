@@ -1,5 +1,8 @@
 body {
   font-family: Arial;
+  background-image: linear-gradient(to left,#e0e2e5, #c9d4e5);
+  background-attachment: fixed;
+  background-size: 100%;
 }
 table{
   table-layout: auto;

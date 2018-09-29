@@ -1,6 +1,9 @@
 body{
 	font-family: Arial;
 	text-align: center;
+	background-image: linear-gradient(to left,#e0e2e5, #c9d4e5);
+	background-attachment: fixed;
+	background-size: 100%;
 }
 table{
 	border:2px solid black;
@@ -15,10 +18,25 @@ tr, th{
 	border:1px solid black;
 	background: #919e8c;
 }
-input {
+input[type=number] {
 	width: 150px;
 	height: 50px;
 	font-size: 30px;
 	text-align: center;
 	border:2px solid black;
+}
+#botao {
+	width: 80px;
+	height: 30px;
+	padding: 5px;
+	background-color: white;
+	border-radius: 5px;
+	border: 1px solid #41ccc5;
+	transition-property: background-color;
+	transition-duration: 0.2s;
+}
+#botao:hover{
+	transition-property: background-color;
+	transition-duration: 0.2s;
+	background-color: #41ccc5;
 }
