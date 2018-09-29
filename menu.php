@@ -96,6 +96,7 @@
             color: #818181;
             display: block;
             transition: 0.3s;
+            font-family: Arial;
         }
 
         .sidenav a:hover {
