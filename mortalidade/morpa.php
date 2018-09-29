@@ -69,7 +69,7 @@ document.write('<td><input class="input" type="number" id="ME'+i+'" name="ME'+i+
 			  </tr>
 		</table>
 	</form><br><br>
-	<input type="submit" name="salvar e sair" id="botao" onclick="redirecionar()">
+	<input type="submit" name="salvar e sair" id="botao">
 	</div>
 	
 </body>
