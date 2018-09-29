@@ -3,12 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<title></title>
-		<link rel="stylesheet" type="text/css" href="essecsspertencemortalidade.css">
+		<link rel="stylesheet" type="text/css" href="cssmor.css">
 		<script>
 		function redirecionar() {
-			if (getElementsByTagName('input').value != null) {
-				sub
-			}
+			lol = document.getElementById('MN0').value
+			alert(lol)
 		}
 
 		function funcaoSemana() {
@@ -27,7 +26,6 @@
 				document.getElementById('DIA'+(i+2)).innerHTML = 3 + '/' + (mes + 2)
 				document.getElementById('DIA'+(i+3)).innerHTML = 4 + '/' + (mes + 2)
 				document.getElementById('DIA'+(i+4)).innerHTML = 5 + '/' + (mes + 2)
-				document.getElementById('DIA'+(i+5)).innerHTML = 6 + '/' + (mes + 2)
 				break
 				
 			} else {
@@ -57,7 +55,7 @@
 			    <td>Morte Natural</td>
 			    <script>
 			    	for (var i = 0; i<7; i++) {	   
-document.write('<td><input class="input" type="number" id="MN'+i+'" name="MN'+i+'"></td>')
+document.write('<td><input class="input" type="number" id="MN'+i+'" name="MN'+i+'" placeholder="Exemplo:0"></td>')
 			    	}
 			    </script>
 			  </tr>
@@ -65,13 +63,19 @@ document.write('<td><input class="input" type="number" id="MN'+i+'" name="MN'+i+
 			    <td>Eliminado</td>
 			    <script>
 			    for (var i = 0; i<7; i++) {	   
-document.write('<td><input class="input" type="number" id="ME'+i+'" name="ME'+i+'"></td>')
+document.write('<td><input class="input" type="number" id="ME'+i+'" name="ME'+i+'" placeholder="Exemplo:0"></td>')
 			    	}
 			    </script>
 			  </tr>
 		</table>
+<<<<<<< HEAD:mortalidade/morpa.php
 		<input type="submit" name="salvar e sair">
 	</form>
+=======
+	</form><br><br>
+	<input type="submit" name="salvar e sair" id="botao" onclick="redirecionar()">
+>>>>>>> 37411be00f18be2cd4ea0e46cab078521ad93513:mortalidade/mortalidadepagina.php
 	</div>
+	
 </body>
 </html>
