@@ -1,0 +1,35 @@
+body{
+	text-align: center;
+	font-family: Arial;
+
+}
+table {
+	border:2px solid black;
+	margin: auto;
+	width: 600px;
+	height: 200px;
+	background: black;
+}
+th,td {
+	border:1px solid black;
+	background: #919e8c;
+}
+.info {
+	text-align: center;
+	height: 50px;
+	font-size: 15px; 
+	border:1px solid black;
+}
+#botao{
+	width: 80px;
+	height: 30px;
+	padding: 5px;
+	background-color: white;
+	border-radius: 5px;
+	border: 1px solid #41ccc5 ;
+}
+#botao:hover{
+	transition-property: background-color;
+	transition-duration: 0.2s;
+	background-color: #41ccc5;
+}
