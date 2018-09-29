@@ -55,6 +55,6 @@
 		exit();
 	}
 	else{
-		header("Location: /hackaton/index.php");
+		header("Location: /hackaton/menu.php");
 		exit();
 	}
