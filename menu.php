@@ -10,6 +10,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<style>
 		.fundo{
 			background-color: #CCC;
@@ -27,19 +28,21 @@
 	<title>ABATE CHIQ</title>
 </head>
 <body class="fundo">
-	<div class="principal">
-		<nav>
-			<div class="divisao">
-				<ul>
-					<li><a href="mortalidadepagina.php">Ficha de mortalidade</a></li>
-				</ul>
-			</div>
-			<div class="nav-login">
-				<form = action="includes/logout.inside.php" method="POST">
-					<button type="submit" name="submit">Logout</button>
-				</form>
-			</div>
-		</nav>
-	</div>		
+	<header>
+		<div class="principal">
+			<nav>
+				<div>
+					<ul>
+						<li><a href="mortalidadepagina.php">Ficha de mortalidade</a></li>
+					</ul>
+				</div>
+				<div class="nav-login">
+					<form action="includes/logout.inside.php" method="POST">
+						<button type="submit" name="submit">Logout</button>
+					</form>
+				</div>
+			</nav>
+		</div>
+	</header>	
 </body>
 </html>
