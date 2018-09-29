@@ -67,10 +67,9 @@ document.write('<td><input class="input" type="number" id="ME'+i+'" name="ME'+i+
 			    	}
 			    </script>
 			  </tr>
-		</table>
-		<input type="submit" name="salvar e sair">
-	</form><br><br>
-	<input type="submit" name="salvar e sair" id="botao" onclick="redirecionar()">
+		</table><br><br>
+		<input type="submit" name="salvar e sair" id="botao">
+	</form>
 	</div>
 	
 </body>

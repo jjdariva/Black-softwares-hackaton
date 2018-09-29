@@ -6,9 +6,8 @@
 		$ME1 = $_POST['ME0'];
 	}
 	$uname = $_SESSION['u_name'];
-	echo "~$uname";
 	$soma = $MN1+$ME1;
-	$sql ="INSERT INTO `usuarios` (`m1`,`m2`) VALUES (`$uname`, MN1) WHERE `u_name` = $uname;";
-	$cv = mysqli_query($conn, $sql);
-	echo "$sql";
-	echo ($_SESSION['u_name']);				
+	$sql ="SELECT * FROM `usuarios` WHERE m1 = null;";
+	$query = mysqli_query($conn, $sql);
+	$row = mysqli_fetch_assoc($query);
+		echo "$row";
