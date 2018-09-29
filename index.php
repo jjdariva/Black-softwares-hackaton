@@ -1,11 +1,11 @@
 <?php  
-	session_start()
-	if (isset($_SESSION['u_id'])) {
-		header("Location /hackaton/menu.php")
+	session_start();
+	if(isset($_SESSION['u_id'])) {
+		header("Location /hackaton/menu.php");
+		exit();
 	} else {
-		# code...
+		$x = "1"; 
 	}
-	
 ?>
 
 <!DOCTYPE html>
