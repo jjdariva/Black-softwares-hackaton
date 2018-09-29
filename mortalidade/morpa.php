@@ -41,7 +41,7 @@
 <body onload="funcaoSemana()">
 	<div>
 		<center><h2>Mortalidade</h2></center>
-		<form>
+		<form action="/hackaton/mortalidade/includes/mort.php" method="POST">
 		<table class="a">
 			  <tr class="coluna">
 			    <th>Mortalidade Diária</th>
@@ -70,8 +70,8 @@ document.write('<td><input class="input" type="number" id="ME'+i+'" name="ME'+i+
 			    </script>
 			  </tr>
 		</table>
-	</form>
 		<input type="submit" name="salvar e sair">
+	</form>
 	</div>
 </body>
 </html>
