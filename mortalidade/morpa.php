@@ -30,7 +30,7 @@
 				
 			} else {
 				b = b + 1
-				document.getElementById('DIA'+i).innerHTML = (dia+b) + '/' + (mes + 2)	
+				document.getElementById('DIA'+i).innerHTML = (dia+b) + '/' + (mes + 1)	
 			}
 		}
 	}
@@ -38,6 +38,7 @@
 </head>
 <body onload="funcaoSemana()">
 	<div>
+		<p>tabela</p>
 		<center><h2>Mortalidade</h2></center>
 		<form action="/hackaton/mortalidade/includes/mort.php" method="POST">
 		<table class="a">
@@ -67,11 +68,9 @@ document.write('<td><input class="input" type="number" id="ME'+i+'" name="ME'+i+
 			    	}
 			    </script>
 			  </tr>
-		</table>
-		<br><br>
-		<input type="submit" name="salvar e sair" id="botao">
+		</table><br><br>
+		<input type="submit" name="submit" id="botao">
 	</form>
 	</div>
-	
 </body>
 </html>
